@@ -17,10 +17,8 @@ useEffect(() => {
             <div className='flex flex-col gap-3'>
                 {
                     categories.map(category => (
-                    <NavLink to={`/category/${category.category_id}`}>
-                        <button className='btn bg-base-100 border-none w-full' key={category.category_id}>
+                    <NavLink to={`/category/${category.category_id}`} className='btn bg-base-100 border-none w-full' key={category.category_id}>
                         {category.category_name}
-                        </button>
                     </NavLink>
                 ))}
             </div>
